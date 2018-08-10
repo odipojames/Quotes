@@ -9,9 +9,11 @@ import {Quote} from './quote'
 export class AppComponent {
   title = 'Quotes';
   quotes = [
-        new Quote(1,'Money  cant buy life '),
-        new Quote(1,'Love has no bundry'),
-          new Quote(1,'Nobody chose biological parents'),
+    
+          new Quote(1,'Money  cant buy life ','by Bob Marley'),
+          new Quote(1,'Love has no bundry','by Prof. Akoto'),
+            new Quote(1,'Nobody chose biological parents','by Akothee'),
+
         ]
   constructor(){
 
