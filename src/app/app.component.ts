@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotes';
-  quote ="luve has no boundry";
+  quotes: string[];
+
+  constructor(){
+
+    this.quotes = ["Money cant buy life","Love has no boundry","Nobody chose their biological parents"];
+  }
 }
