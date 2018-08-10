@@ -14,6 +14,11 @@ export class QuoteComponent implements OnInit {
           new Quote(1,'Nobody chose biological parents','by Akothee'),
         ]
 
+        toogleDetails(index){
+        this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    }
+
+
   constructor() { }
 
   ngOnInit() {

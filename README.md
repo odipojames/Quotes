@@ -1,6 +1,6 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+This project was developed by [Odipo James CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
 ## Development server
 

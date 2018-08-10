@@ -2,6 +2,7 @@
 <ul>
     <div *ngFor='let quote of quotes'>
         <li >{{quote.name}}</li>
+         <button  (click)='toogleDetails(i)'>Quote detail</button>
         <app-quote-details [quote]='quote'></app-quote-details>
     </div>
 </ul>
