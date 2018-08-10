@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Quote} from './quote'
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotes';
-  quotes: string[];
-
+  quotes = [
+        new Quote(1,'Money  cant buy life '),
+        new Quote(1,'Love has no bundry'),
+          new Quote(1,'Nobody chose biological parents'),
+        ]
   constructor(){
 
-    this.quotes = ["Money cant buy life","Love has no boundry","Nobody chose their biological parents"];
+
   }
 }
