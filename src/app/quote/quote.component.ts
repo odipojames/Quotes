@@ -9,9 +9,9 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-        new Quote(1,'Money  cant buy life ','by Bob Marley'),
-        new Quote(1,'Love has no bundry','by Prof. Akoto'),
-          new Quote(1,'Nobody chose biological parents','by Akothee'),
+        new Quote(1,'Money  cant buy life ','by Bob Marley',new Date(2018,3,4)),
+        new Quote(1,'Love has no bundry','by Prof. Akoto',new Date(2018,3,1)),
+          new Quote(1,'Nobody chose biological parents','by Akothee',new Date(2017,3,14)),
         ]
 seenQuote(isSeen,index){
         if (isSeen){
