@@ -1,8 +1,9 @@
 <h1>Hey!Drop your best quotes here. </h1>
 <ul>
-    <div *ngFor='let quote of quotes'>
+<div *ngFor='let quote of quotes;let i = index'>
         <li >{{quote.name}}</li>
-         <button  (click)='toogleDetails(i)'>Quote detail</button>
-        <app-quote-details [quote]='quote'></app-quote-details>
+        <button  (click)='toogleDetails(i)'>Toogle Details</button>
+
+        <app-quote-details *ngIf="quote.showDescription" [quote]='quote'></app-quote-details>
     </div>
 </ul>
