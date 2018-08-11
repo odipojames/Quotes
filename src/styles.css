@@ -11,4 +11,10 @@ ul{
   font-size: 26px;
   color: green;
 }
+.btn btn-primary{
+  background-color: blue;
+}
+.row{
+  align-items: center;
+}
 @import "~bootstrap/dist/css/bootstrap.css"

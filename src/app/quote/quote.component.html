@@ -1,10 +1,17 @@
 <h1>Hey!Drop your best quotes here. </h1>
+<div class="container">
+  <div class="row">
+        <app-quote-form></app-quote-form>
+    </div>
+
 <ul class="list-group">
-    <div *ngFor='let quote of quotes;let i = index'>
+    <div class="row" *ngFor='let quote of quotes;let i = index'>
         <li >{{quote.name}}</li>
-        <button  (click)='toogleDetails(i)'>Quote Details</button>
+        <button class="btn btn-primary"  (click)='toogleDetails(i)'>Quote Details</button>
 
         <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isSeen)= 'seenQuote($event,i)'></app-quote-details>
     </div>
 
+
 </ul>
+  </div>
