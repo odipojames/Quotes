@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
 h1{
+
   color: blue;
   text-align: center;
 }
+
+ul{
+  align-self: center;
+  font-size: 26px;
+  color: green;
+}
+@import "~bootstrap/dist/css/bootstrap.css"
