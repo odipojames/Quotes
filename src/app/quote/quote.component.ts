@@ -13,12 +13,14 @@ export class QuoteComponent implements OnInit {
         new Quote(1,'Love has no bundry','by Prof. Akoto'),
           new Quote(1,'Nobody chose biological parents','by Akothee'),
         ]
-
-        toogleDetails(index){
+seenQuote(isSeen,index){
+        if (isSeen){
+            this.quotes.splice(index,1);
+            }
+          }
+          toogleDetails(index){
         this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
-
-
   constructor() { }
 
   ngOnInit() {
