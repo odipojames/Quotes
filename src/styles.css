@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "~bootstrap/dist/css/bootstrap.css"
 h1{
 
   color: blue;
@@ -17,4 +17,3 @@ ul{
 form{
   align: center;
 }
-@import "~bootstrap/dist/css/bootstrap.css"
