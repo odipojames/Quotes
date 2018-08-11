@@ -1,7 +1,8 @@
 <h1>Hey!Drop your best quotes here. </h1>
 <div class="container">
+
   <div class="row">
-        <app-quote-form></app-quote-form>
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
 
 <ul class="list-group">
