@@ -1,19 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+
 h1{
 
   color: blue;
   text-align: center;
+  margin-left: -180px;
 }
 
-ul{
-  align-self: center;
-  font-size: 26px;
-  color: green;
+
+.form-group{
+  margin-bottom: 20px;
 }
-.btn btn-primary{
-  background-color: blue;
+#formdiv{
+  margin-left: 250px;
+  margin-bottom: 50px;
 }
-form{
-  align: center;
+#list{
+  margin-left: 400px;
+}
+.li{
+  margin-bottom: 15px;
 }

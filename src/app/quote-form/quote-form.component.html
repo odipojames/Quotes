@@ -1,9 +1,9 @@
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" id="formdiv">
       <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <!-- Name Form -->
             <div class="form-group">
-                <label for="name">Quote</label>
+                <label for="name">Quote:</label>
                 <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
 
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -13,7 +13,7 @@
             </div>
             <!-- Description Input -->
             <div class="form-group">
-                <label for="description">Aurthor</label>
+                <label for="description">Aurthor:</label>
                 <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
                 <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                     <p> Aurthor is Required</p>
@@ -23,7 +23,7 @@
             </div>
             <!-- Date Input -->
             <div class="form-group">
-                <label for="complete">Date</label>
+                <label for="complete">Date:</label>
                 <input type='date' id="seenDate" [(ngModel)]="newQuote.seenDate" name="seenDate" #seenDate="ngModel" required >
                 <div [hidden]="seenDate.valid || seenDate.pristine" class="alert alert-danger">
                     <p> Posting Date is Required</p>
