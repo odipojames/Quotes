@@ -9,9 +9,9 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-        new Quote(1,'Money  cant buy life ','by Bob Marley',new Date(2018,3,4)),
-        new Quote(1,'Love has no bundry','by Prof. Akoto',new Date(2018,3,1)),
-          new Quote(1,'Nobody chose biological parents','by Akothee',new Date(2017,3,14)),
+        // new Quote(1,'Money  cant buy life ','by Bob Marley',new Date(2018,3,4)),
+        // new Quote(1,'Love has no bundry','by Prof. Akoto',new Date(2018,3,1)),
+        //   new Quote(1,'Nobody chose biological parents','by Akothee',new Date(2017,3,14)),
         ]
 seenQuote(isSeen,index){
         if (isSeen){
@@ -21,7 +21,8 @@ seenQuote(isSeen,index){
           toogleDetails(index){
         this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
-
+    public quote: Quote = new Quote(0, '', '',new Date(),0,0)
+    addNewQuote(quote: Quote)
     addNewQuote(quote){
             let quoteLength = this.quotes.length;
             quote.id=quoteLength+1;
