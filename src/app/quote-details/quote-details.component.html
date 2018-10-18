@@ -1,22 +1,22 @@
 <p>{{quote.description}}</p>
 <p>This quote has been here for {{quote.seenDate|dateCount}} days</p>
-<button (click) = 'quoteSeen(true)'> Seen~delete </button>
+<button (click)='quoteSeen(true)' class="btn btn-danger"> Seen~delete </button>
 <div class="row">
 
-<div class="col-6">
+  <div class="col-6">
 
-<p>
-  <button class="btn btn-sm btn-success" on-click='addUpVotes()'>like{{quote.upvote}}</button>
-</p>
+    <p>
+      <button class="btn btn-sm btn-success" on-click='addUpVotes()'>like{{quote.upvote}}</button>
+    </p>
 
-</div>
+  </div>
 
-<div class="col-6">
+  <div class="col-6">
 
-<p>
-  <button class="btn btn-sm btn-secondary" (click)='addDownVotes()'>dislike{{quote.downvote}}</button>
-</p>
+    <p>
+      <button class="btn btn-sm btn-secondary" (click)='addDownVotes()'>dislike{{quote.downvote}}</button>
+    </p>
 
-</div>
+  </div>
 
 </div>
