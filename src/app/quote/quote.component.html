@@ -2,19 +2,19 @@
 <div class="container">
 
   <div class="row">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-    </div>
-<div id="list">
-  <h2>Find your quotes here now </h2>
-<ul class="list-group">
-    <div class="row" *ngFor='let quote of quotes;let i = index'>
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  </div>
+  <div id="list">
+    <h2>Find your quotes here now </h2>
+    <ul class="list-group">
+      <div class="row" *ngFor='let quote of quotes;let i = index'>
         <li class="li">{{quote.name}}</li>
-        <button class="btn btn-primary"  (click)='toogleDetails(i)' id="button">Quote Details</button>
+        <button class="btn btn-primary" (click)='toogleDetails(i)' id="button">Quote Details</button>
 
-        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isSeen)= 'seenQuote($event,i)'></app-quote-details>
-    </div>
+        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isSeen)='seenQuote($event,i)'></app-quote-details>
+      </div>
 
 
-</ul>
+    </ul>
   </div>
 </div>
