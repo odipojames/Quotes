@@ -1,20 +1,22 @@
 <h1>Hey!Drop your best quotes here. </h1>
 <div class="container">
 
-  <div class="row">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-  </div>
-  <div id="list">
-    <h2>Find your quotes here now </h2>
-    <ul class="list-group">
-      <div class="row" *ngFor='let quote of quotes;let i = index'>
-        <li class="li">{{quote.name}}</li>
-        <button class="btn btn-primary" (click)='toogleDetails(i)' id="button">Quote Details</button>
+<div class="row">
+  <div class="col-xs-md-6">
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div> <div class="col-xs-md-6" id=quote><p>"Do not mind anything that anyone tells you about anyone else.<br>Judge everyone and everything by yourself"~Henry James</p></div></div>
+<div id="list">
 
-        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isSeen)='seenQuote($event,i)'></app-quote-details>
-      </div>
+  <h2>Find your quotes here now </h2>
+  <ul class="list-group">
+    <div class="row" *ngFor='let quote of quotes;let i = index'>
+      <li class="li">{{quote.name}}</li>
+      <button class="btn btn-primary" (click)='toogleDetails(i)' id="button">Quote Details</button>
+
+      <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isSeen)='seenQuote($event,i)'></app-quote-details>
+    </div>
 
 
-    </ul>
-  </div>
+  </ul>
+</div>
 </div>
