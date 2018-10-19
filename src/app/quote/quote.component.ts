@@ -28,7 +28,7 @@ seenQuote(isSeen,index){
             quote.id=quoteLength+1;
             quote.completeDate = new Date(quote.completeDate)
             this.quotes.push(quote)
-
+      this.quote = new Quote(0, '', '',new Date(),0,0);
         }
 
   constructor() { }

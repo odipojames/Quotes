@@ -12,27 +12,34 @@ h1{
 h2{
   text-align: center;
   text-decoration-style: dotted;
+  margin-top: -80px;
 }
 
 .form-group{
-  margin-bottom: 50px;
+  margin-bottom:15px;
 }
 #formdiv{
   margin-left: 250px;
   margin-bottom: 30px;
+  background-color: #FFB23C;
+  padding: 80px;
 }
 #list{
-margin-top: 50px;
+margin-top: -25px;
   background-color: #5FCD59;
   margin-right: 200px;
-  padding: 50px;
+  padding: 80px;
 }
 .li{
 
-    margin-left: 400px;
+    margin-left: 200px;
     margin-top: 80px;
 }
 #button{
   margin-top: 75px;
   margin-bottom: 5px;
+}
+body{
+  background-color: pink;
+
 }
